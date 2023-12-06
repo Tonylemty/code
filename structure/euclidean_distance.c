@@ -13,10 +13,10 @@ typedef struct Point p;
 
 int main() {
 
-    p p1 = {2, 3}, p2 = {4, 5};
+    p p1 = {1, 2}, p2 = {2, 1};
     float distance;
 
-    distance = sqrt(pow(p1.x - p2.x, 2) + (p1.y - p2.y, 2));
+    distance = sqrt(pow(p1.x - p2.x, 2) + pow(p1.y - p2.y, 2));
     printf("%.4f", distance);
 
     return 0;
